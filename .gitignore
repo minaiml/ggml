@@ -1,11 +1,5 @@
 build/
-build-debug/
-build-release/
-build-sanitize-addr/
-build-sanitize-thread/
-build-cov/
-build-ci-debug/
-build-ci-release/
+build-*/
 out/
 tmp/
 models/
@@ -15,7 +9,11 @@ compile_commands.json
 CMakeSettings.json
 .vs/
 .vscode/
+.idea/
+.clangd
 
+.venv/
+ggml_env/
 .exrc
 .cache
 .DS_Store
@@ -28,6 +26,14 @@ tests/arm_neon.h
 zig-out/
 zig-cache/
 
+*.o
+*.d
 *.dot
 
 *.sw?
+
+__pycache__/
+
+# Model files
+ggml-model-f16.bin
+*.bat
